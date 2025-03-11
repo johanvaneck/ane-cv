@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Teaching and Learning Portfolio</title>
+	<style>
+		body {
+			font-family: sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			width: 80%;
+			margin: 20px auto;
+		}
+
+		.tabs {
+			display: flex;
+			border-bottom: 1px solid #ccc;
+		}
+
+		.tab {
+			padding: 10px 20px;
+			cursor: pointer;
+			border: 1px solid transparent;
+			border-bottom: none;
+		}
+
+		.tab.active {
+			border: 1px solid #ccc;
+			border-bottom: 1px solid white;
+			background-color: white;
+		}
+
+		.tab-content {
+			padding: 20px;
+			border: 1px solid #ccc;
+			display: none;
+		}
+
+		.tab-content.active {
+			display: block;
+		}
+
+		.attachment-list {
+			list-style-type: none;
+			padding: 0;
+		}
+
+		.attachment-list li {
+			margin-bottom: 5px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="container">
+		<h1>Teaching and Learning Portfolio</h1>
+
+		<div class="tabs">
+			<div class="tab active" data-tab="philosophy">T&L Philosophy</div>
+			<div class="tab" data-tab="teaching">Teaching and Learning</div>
+			<div class="tab" data-tab="research">Research</div>
+			<div class="tab" data-tab="engaged">Engaged Scholarship</div>
+			<div class="tab" data-tab="leadership">Leadership and Administration</div>
+			<div class="tab" data-tab="conclusion">Conclusion</div>
+		</div>
+
+		<div class="tab-content active" id="philosophy">
+			<h2>Teaching and Learning Philosophy</h2>
+			<p>
+				[Write your teaching and learning philosophy here.]
+			</p>
+			<h3>Attachments</h3>
+			<ul class="attachment-list">
+				<li><a href="path/to/philosophy_document.pdf" target="_blank">Philosophy Document
+						(PDF)</a></li>
+				<li><a href="path/to/philosophy_presentation.pptx" target="_blank">Philosophy
+						Presentation (PPTX)</a></li>
+			</ul>
+		</div>
+
+		<div class="tab-content" id="teaching">
+			<h2>Teaching and Learning</h2>
+			<p>
+				[Describe your teaching methods, courses taught, and student feedback.]
+			</p>
+			<h3>Attachments</h3>
+			<ul class="attachment-list">
+				<li><a href="path/to/syllabus.pdf" target="_blank">Sample Syllabus (PDF)</a></li>
+				<li><a href="path/to/student_evaluations.pdf" target="_blank">Student Evaluations
+						(PDF)</a></li>
+				<li><a href="path/to/teaching_materials.zip" target="_blank">Teaching Materials
+						(ZIP)</a></li>
+			</ul>
+		</div>
+
+		<div class="tab-content" id="research">
+			<h2>Research</h2>
+			<p>
+				[Detail your research interests, publications, and presentations.]
+			</p>
+			<h3>Attachments</h3>
+			<ul class="attachment-list">
+				<li><a href="path/to/publication1.pdf" target="_blank">Publication 1 (PDF)</a></li>
+				<li><a href="path/to/publication2.pdf" target="_blank">Publication 2 (PDF)</a></li>
+				<li><a href="path/to/presentation_slides.pdf" target="_blank">Presentation Slides
+						(PDF)</a></li>
+			</ul>
+		</div>
+
+		<div class="tab-content" id="engaged">
+			<h2>Engaged Scholarship</h2>
+			<p>
+				[Describe your community engagement, service learning, and public outreach.]
+			</p>
+			<h3>Attachments</h3>
+			<ul class="attachment-list">
+				<li><a href="path/to/community_report.pdf" target="_blank">Community Engagement Report
+						(PDF)</a></li>
+				<li><a href="path/to/service_learning_project.pdf" target="_blank">Service Learning
+						Project (PDF)</a></li>
+			</ul>
+		</div>
+
+		<div class="tab-content" id="leadership">
+			<h2>Leadership and Administration</h2>
+			<p>
+				[Detail your administrative roles, committee work, and leadership experiences.]
+			</p>
+			<h3>Attachments</h3>
+			<ul class="attachment-list">
+				<li><a href="path/to/leadership_report.pdf" target="_blank">Leadership Report (PDF)</a>
+				</li>
+				<li><a href="path/to/committee_minutes.pdf" target="_blank">Committee Minutes (PDF)</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="tab-content" id="conclusion">
+			<h2>Conclusion</h2>
+			<p>
+				[Summarize your key contributions and future goals.]
+			</p>
+			<h3>Attachments</h3>
+			<ul class="attachment-list">
+				<li><a href="path/to/future_plans.pdf" target="_blank">Future Plans (PDF)</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<script>
+		const tabs = document.querySelectorAll('.tab');
+		const tabContents = document.querySelectorAll('.tab-content');
+
+		tabs.forEach(tab => {
+			tab.addEventListener('click', () => {
+				const tabId = tab.dataset.tab;
+
+				tabs.forEach(t => t.classList.remove('active'));
+				tabContents.forEach(content => content.classList.remove('active'));
+
+				tab.classList.add('active');
+				document.getElementById(tabId).classList.add('active');
+			});
+		});
+	</script>
+</body>
+
+</html>
