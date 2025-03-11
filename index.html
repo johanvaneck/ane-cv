@@ -10,35 +10,64 @@
 			font-family: sans-serif;
 			margin: 0;
 			padding: 0;
+			background-color: #285943;
+			/* Emerald Blue Background */
+			color: #e0e0e0;
+			/* Light text for contrast */
 		}
 
 		.container {
 			width: 80%;
 			margin: 20px auto;
+			background-color: rgba(255, 255, 255, 0.1);
+			/* Slightly transparent white container */
+			padding: 20px;
+			border-radius: 8px;
+			/* Rounded corners */
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+			/* Deeper shadow */
 		}
 
 		.tabs {
 			display: flex;
-			border-bottom: 1px solid #ccc;
+			border-bottom: 1px solid #487963;
+			/* Slightly lighter border */
+			background-color: rgba(0, 0, 0, 0.2);
+			/* Darker background for tabs */
+			border-radius: 8px 8px 0 0;
+			overflow: hidden;
+			/* Prevent border radius clipping */
 		}
 
 		.tab {
 			padding: 10px 20px;
 			cursor: pointer;
-			border: 1px solid transparent;
-			border-bottom: none;
+			border: none;
+			background-color: transparent;
+			color: #b0c9bc;
+			/* Lighter tab text */
+			transition: background-color 0.3s ease;
+			/* Smooth hover effect */
 		}
 
 		.tab.active {
-			border: 1px solid #ccc;
-			border-bottom: 1px solid white;
-			background-color: white;
+			background-color: #487963;
+			/* Active tab background */
+			color: white;
+			font-weight: bold;
+		}
+
+		.tab:hover {
+			background-color: rgba(72, 121, 99, 0.7);
+			/* Slightly lighter hover */
 		}
 
 		.tab-content {
 			padding: 20px;
-			border: 1px solid #ccc;
-			display: none;
+			background-color: rgba(0, 0, 0, 0.1);
+			/* Darker content background */
+			border-radius: 0 0 8px 8px;
+			/* Rounded corners */
 		}
 
 		.tab-content.active {
@@ -53,6 +82,31 @@
 		.attachment-list li {
 			margin-bottom: 5px;
 		}
+
+		.attachment-list a {
+			color: #89cff0;
+			/* Light blue link color */
+			text-decoration: none;
+			transition: color 0.3s ease;
+			/* Smooth link color change */
+		}
+
+		.attachment-list a:hover {
+			text-decoration: underline;
+			color: #a0d8ef;
+			/* Slightly lighter hover color */
+		}
+
+		h1,
+		h2,
+		h3 {
+			color: #c0ded9;
+			/* Lighter heading color */
+		}
+
+		p {
+			line-height: 1.6;
+		}
 	</style>
 </head>
 
@@ -61,7 +115,8 @@
 		<h1>Teaching and Learning Portfolio</h1>
 
 		<div class="tabs">
-			<div class="tab active" data-tab="philosophy">T&L Philosophy</div>
+			<div class="tab active" data-tab="home">Home</div>
+			<div class="tab" data-tab="philosophy">T&L Philosophy</div>
 			<div class="tab" data-tab="teaching">Teaching and Learning</div>
 			<div class="tab" data-tab="research">Research</div>
 			<div class="tab" data-tab="engaged">Engaged Scholarship</div>
@@ -71,6 +126,20 @@
 
 		<div class="tab-content active" id="philosophy">
 			<h2>Teaching and Learning Philosophy</h2>
+			<p>
+				[Write your home here.]
+			</p>
+			<h3>Attachments</h3>
+			<ul class="attachment-list">
+				<li><a href="path/to/philosophy_document.pdf" target="_blank">Philosophy Document
+						(PDF)</a></li>
+				<li><a href="path/to/philosophy_presentation.pptx" target="_blank">Philosophy
+						Presentation (PPTX)</a></li>
+			</ul>
+		</div>
+
+		<div class="tab-content" id="philosophy">
+			<h2></h2>
 			<p>
 				[Write your teaching and learning philosophy here.]
 			</p>
