@@ -10,7 +10,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
 		rel="stylesheet">
-	<title>Teaching and Learning Portfolio</title>
+	<title>Ané Church</title>
 	<style>
 		body {
 			font-family: sans-serif;
@@ -117,29 +117,63 @@
 			border-radius: 8px;
 		}
 
+		h2 {
+			padding: 0.5rem;
+			background-color: #8b0000;
+			font-size: 1.5rem;
+		}
+
+		h3 {
+			padding: 0.5rem;
+			background-color: #8b0000;
+			font-size: 1.0rem;
+		}
+
 		p {
+			text-align: justify;
 			line-height: 1.6;
+			padding: 0.5rem;
+		}
+
+		table {
+			border-color: gray;
+			border-collapse: collapse;
+			border-width: 2px;
+		}
+
+		th,
+		td {
+			vertical-align: top;
+			padding: 0.5rem;
+		}
+
+		.pop {
+			background-color: #8b0000;
+			color: white;
+			padding: 4px;
+			border-radius: 5px;
+		}
+
+		a {
+			font-style: italic;
+			text-decoration: underline;
+		}
+
+		li {
+			display: list-item;
+			list-style-type: circle;
 		}
 	</style>
 </head>
 
 <body>
 	<div class="container">
-		<h1>
-			<div
-				class="flex justify-between items-center text-center text-4xl font-bold text-white rounded-lg bg-[#8b0000] p-2">
-				Ané Church: Teaching Portifolio
-				<img class="bg-white rounded h-16 p-2" src="assets/ufs-logo.png" alt="Ané Church Logo">
-			</div>
-		</h1>
-
-		<div class="h-8"></div>
 
 		<div class="flex gap-2">
 			<div class="tabs flex flex-col gap-2 w-sm">
 				<div class="tab active" data-tab="welcome">Welcome</div>
 				<div class="tab" data-tab="philosophy">Teaching Philosophy</div>
-				<div class="tab" data-tab="teaching">Personal Profile</div>
+				<div class="tab" data-tab="personal">Personal Profile</div>
 				<div class="tab" data-tab="research">Approach Practice & Effectiveness</div>
 				<div class="tab" data-tab="engaged">Student Learning</div>
 				<div class="tab" data-tab="leadership">Student Development & Support</div>
@@ -151,19 +185,1055 @@
 				<div class="tab" data-tab="research">Research & Scholorship</div>
 				<div class="tab" data-tab="other">Other</div>
 			</div>
-			<div class="h-full">
-				<div class="tab-content active" id="welcome">Welcome</div>
-				<div class="tab-content" id="philosophy">Teaching Philosophy</div>
-				<div class="tab-content" id="teaching">Personal Profile</div>
-				<div class="tab-content" id="research">Approach Practice & Effectiveness</div>
-				<div class="tab-content" id="engaged">Student Learning</div>
-				<div class="tab-content" id="leadership">Student Development & Support</div>
-				<div class="tab-content" id="conclusion">Curriculum & Course Development</div>
+			<div class="h-full w-full">
+				<div class="tab-content active" id="welcome">
+					<div
+						class="flex justify-between items-center text-white rounded-lg bg-[#8b0000] p-4 gap-4">
+						<div class="flex flex-col gap-2 w-full">
+							<h1 class="text-4xl font-bold">
+								Ané Church: Teaching Portifolio
+							</h1>
+							<h3 class="italic text-lg">
+								Bridging the gap between theory and practice by
+								fostering technical proficiency and real-world readiness
+								in students.
+							</h3>
+						</div>
+						<div class="flex flex-col">
+							<img class="shadow rounded-t w-32" src="assets/ane.jpg"
+								alt="Ané Church">
+							<img class="bg-white rounded-b w-32 p-2"
+								src="assets/ufs-logo.png" alt="Ané Church Logo">
+						</div>
+
+					</div>
+					<p></p>
+				</div>
+				<div class="tab-content" id="philosophy">
+					<h2>Teaching Philosophy</h2>
+					<p>
+						I believe that it is my responsibility to inspire and motivate students
+						to
+						become responsible and ethical professionals. By fostering critical,
+						moral and
+						innovative thinking, I aim to shape good corporate citizens,
+						contributing to an
+						enhanced society.
+					</p>
+					<p>
+						To shape these professionals, students need more than just technical
+						knowledge
+						in Accounting and Auditing. They must also understand how professionals
+						in these
+						fields think and solve problems. To achieve this, I bring real-life
+						examples to
+						class and inspire students through exposure to different professionals,
+						issues
+						and examples, making the professional world real and tangible. This
+						approach
+						helps students appreciate the profession and prepare for the world of
+						work,
+						making them well-rounded, employable graduates.
+					</p>
+					<p>
+						I believe that all students have the ability and natural aptitude to
+						learn but
+						that they do so differently. In order to cater for these different
+						learning
+						styles, a variety of tools need to be used to help them learn. I also
+						believe
+						that the best way to learn is to do the work yourself and, therefore,
+						encourage
+						student engagement and self-awareness through reflection. This is true
+						for both
+						students and educators, and therefore, I also prioritise testing new
+						teaching
+						initiatives, obtaining feedback, and actively reflecting on my teaching
+						practices.
+					</p>
+					<p>
+						I aspire to send individuals into the workforce who not only know the
+						subject
+						but also know themselves – their capabilities, value, opportunities to
+						improve
+						and ability to influence what matters – and the guts to do it…
+					</p>
+
+					<video class="rounded" autoplay muted>
+						<source src="assets/hello.MOV" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+
+				</div>
+				<div class="tab-content" id="personal">
+					<h2>Personal Profile</h2>
+					<p>
+						As an enthusiastic <span class="pop animate-pulse">lecturer</span>, I
+						thrive on
+						bringing
+						energy, passion, and technical expertise to the classroom, whether I
+						teach
+						External Auditing, Professional Ethics or Corporate Governance. I
+						believe these
+						topics are not just subjects but essential building blocks for
+						well-rounded
+						professionals who understand the interplay between the various subject
+						areas and
+						how they fit into the world they will step into. I have a deep-rooted
+						passion
+						for ethics and a genuine desire to shape the leaders of tomorrow by
+						nurturing
+						traits like integrity, professionalism, and ethical leadership. It is my
+						belief
+						that by sowing these seeds today, we can cultivate a more responsible
+						and
+						prosperous tomorrow. I aim to sow these seeds in the classroom for all
+						my
+						students in the various modules that I am involved in. These modules
+						include:
+					</p>
+					<table class="rounded">
+						<thead class="bg-[#8b0000] text-white text-left">
+							<tr>
+								<th>Module</th>
+								<th>Programme / Student Group</th>
+								<th>Period</th>
+								<th>Responsibilities</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									EACG3708
+									Auditing and Corporate Governance
+								</td>
+								<td>
+									B.Accounting Third Year
+								</td>
+								<td class="w-32">
+									2018 – 2025
+								</td>
+								<td>
+									Present and coordinate 50% of the module.
+								</td>
+							</tr>
+							<tr>
+								<td>
+									EAUD5808
+									Auditing and Corporate Governance
+								</td>
+								<td>
+									Post Graduate Diploma in General Accountancy
+								</td>
+								<td class="w-32">
+									2018 – 2025
+
+								</td>
+								<td>
+									Present and coordinate 50% of the module.
+								</td>
+							</tr>
+							<tr>
+								<td>
+									EAUD6808
+									Auditing and Corporate Governance
+								</td>
+								<td>
+									B.Com Honours (Accounting)
+								</td>
+								<td class="w-32">
+									2018 – 2025
+								</td>
+								<td>
+									Present and coordinate 50% of the module.
+								</td>
+							</tr>
+							<tr>
+								<td>
+									EACG6808/5808
+									Advanced Auditing and Corporate Governance
+								</td>
+								<td>
+									B.Accounting Honours and Post Graduate Diploma
+									in Chartered Accountancy.
+								</td>
+								<td class="w-32">
+									2024 – 2025
+								</td>
+								<td>
+									Present the Professional Ethics Unit of the
+									module.
+								</td>
+							</tr>
+							<tr>
+								<td>
+									ERRA6808 Research and Research Methodology for
+									B.Com Hons (Accounting)
+								</td>
+								<td>
+									B.Com Honours (Accounting)
+								</td>
+								<td class="w-32">
+									2025
+								</td>
+								<td>
+									Co-supervision for a group of 5 students who
+									need to submit a mini dissertation in order to
+									complete the module.
+								</td>
+							</tr>
+							<tr>
+								<td>
+									EOEC2614
+									Organisational Ethics and Citizenship
+								</td>
+								<td>
+									Second-year students in:
+									Accountancy
+									Public Administration
+									Finance
+								</td>
+								<td class="w-32">
+									2024
+								</td>
+								<td>
+									Designed and coordinated the module with some
+									teaching responsibilities.
+								</td>
+							</tr>
+							<tr>
+								<td>
+									EACE2614
+									Accountancy Environment
+								</td>
+								<td>
+									B.Accounting and B.Com Accounting Second Year
+								</td>
+								<td class="w-32">
+									2017 – 2018
+								</td>
+								<td>
+									Designed, coordinated and presented 100% of the
+									module.
+								</td>
+							</tr>
+							<tr>
+								<td>
+									EACG2708
+									External Auditing
+								</td>
+								<td>
+									B.Accounting Second Year
+								</td>
+								<td class="w-32">
+									2016 – 2017
+								</td>
+								<td>
+									Redesigned, coordinated and presented 100% of
+									the module.
+								</td>
+							</tr>
+						</tbody>
+
+					</table>
+					<p>
+						I am also the <span class="pop animate-pulse">Year-Group
+							Coordinator</span> for the B.Accounting Third Year,
+						Post-Graduate Diploma in General Accountancy, and B.Com Honours
+						(Accounting)
+						programmes. In this role, I oversee the administrative aspects of these
+						programs, including managing student-related issues, but it also
+						includes
+						facilitating skills development opportunities, and ensuring cohesive
+						integration
+						of teaching and learning across the various modules.
+					</p>
+				</div>
+				<div class="tab-content" id="research">
+					<h2>
+						Teaching Approach Practice & Effectiveness
+					</h2>
+					<p>
+						I see myself as a facilitator of learning. My role is to guide my
+						students to become independent, life-long learners. I firmly support the
+						words of Terry Doyle (2018): “Whoever does the work, does the learning”,
+						and I believe that it is my responsibility to optimise the opportunities
+						for my students to learn. This emphasises the necessity to include
+						different modes of teaching in my modules, and I, therefore, try to
+						follow a blended methodology to cater to my students' different learning
+						needs. My view of blended learning does not only include the traditional
+						“online” and “face-to-face” components but also includes spaces where
+						students can learn outside of the class and online environments.
+					</p>
+					<h3>
+						EACG3708/EAUD5808/EAUD6808: Auditing and Corporate Governance
+					</h3>
+					<p>
+						Auditing and Corporate Governance are concepts that are mostly
+						unfamiliar to students when they enter the higher education space. The
+						other core modules of my students (Financial Accounting, Taxation and
+						Management Accounting) are not so foreign to them as they have been
+						exposed to elements of these modules at school and in life in general.
+						With Auditing and Corporate Governance, the concepts are abstract and
+						removed from what my students have dealt with previously, making it very
+						difficult to understand and envision. I am, therefore, very deliberate
+						in specifically including real/actual experiences and content, bringing
+						students closer to the real world. Through most of these experiences, I
+						also place emphasis on developing students’ pervasive skills and
+						graduate attributes. This aligns not only with SAICA’s Competency
+						Framework (which is the framework that the School of Accountancy needs
+						to apply for purposes of accreditation of our programmes with SAICA) but
+						also with the UFS Vision 130.
+					</p>
+					<p>
+						Note that I share this module with my colleague, Nadia Kganakga, and she
+						covers 50% of the content. The table below sets out the interventions
+						that I incorporate and methods I employ in some of the larger units of
+						the Auditing and Corporate Governance module that I am responsible for.
+						Please follow the related links for evidence of the various
+						interventions.
+					</p>
+					<table class="rounded">
+						<thead class="bg-[#8b0000] text-white text-left">
+							<tr>
+								<th>Unit & Method</th>
+								<th>Discussion</th>
+								<th>Link with the “real world” / Skills development</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<strong>
+										The King IV Report on Corporate
+										Governance
+									</strong>
+									<div class="text-sm">
+										(Face-to-face traditional lectures)
+									</div>
+								</td>
+								<td>
+									<p>
+										The first contact that I have with my
+										class is
+										this unit. I do this with a traditional
+										approach
+										so I can guide students through the unit
+										and get
+										to know each other in a face-to-face
+										setting.
+										This sets the tone for the rest of the
+										year and
+										is key to building a relationship with
+										my
+										students.
+									</p>
+									<p class="text-sm">
+										(Also see the discussion below on the
+										Business
+										Acumen Day.)
+									</p>
+								</td>
+								<td>
+									<p>
+										One of the biggest corporate scandals of
+										the past decade is the collapse of
+										Steinhoff. To utilise this in class, I
+										contacted MultiChoice (DSTV/Showmax) to
+										get permission to show my students the
+										Steinheist Docuseries, which became a
+										“movie day”. <a
+											href="https://drive.google.com/file/d/1VA-jarH8hmmP0zm_0sjEwzxnMb39M2j7/view?usp=drive_link">
+											Steinheist Movie Day </a> </p>
+									<p>
+										I then developed an integrated group
+										assignment based on Steinhoff's
+										collapse. In addition to investigating
+										the governance and ethics failures,
+										students also need to research elements
+										of their other core modules. This aids
+										in breaking down the silos between the
+										different modules in order for students
+										to better understand the interplay
+										between different modules. In addition,
+										it develops research skills, teamwork,
+										and writing skills. <a
+											href="https://drive.google.com/file/d/1SKp5KkhFcL7KmhUygHkeH7F9A7DhDNBl/view?usp=drive_link">Steinhoff
+											Assignment</a>
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<strong>
+										The SAICA Code of Professional Conduct
+									</strong>
+									<div class="text-sm">
+										(Flipped Classroom)
+									</div>
+								</td>
+								<td>
+									<p>
+										For this unit, I make use of a flipped
+										classroom approach to allow me to work
+										through more questions with students and
+										have active discussions and debates on
+										professional ethics in class. This often
+										also flows into discussions on business
+										and personal ethics, where students can
+										learn from each other. I worked closely
+										with CTL to develop this flipped
+										classroom course on Blackboard. Students
+										watch videos and complete tasks and
+										quizzes online, and I then make use of
+										worksheets and questions in class to
+										facilitate discussion and guide students
+										on exam techniques. An example of one of
+										these videos can be found <a
+											href="https://drive.google.com/file/d/15Yl-NwaZGHzV_DiX3kMoOh1pJ6ydtthV/view?usp=drive_link">here</a>,
+										and an
+										example of a worksheet can be found
+										<a
+											href="https://drive.google.com/file/d/1gtgjd_4zeIHy9MTdLwDQsF8tfsbXmMJx/view?usp=drive_link">here</a>.
+									</p>
+								</td>
+								<td>
+									<p>
+										In this unit, I make use of the actual
+										disciplinary documents / <a
+											href="https://drive.google.com/file/d/1EUWh2Ul2McrNngA8mLt4JaKTZwjFGbO7/view?usp=drive_link">hearing
+											outcomes
+											as published by SAICA</a> and
+										information on
+										breaches of the code that are available
+										in the <a
+											href="https://drive.google.com/file/d/1vaZ_oa7L464eabvnfZfu-GQ1EyWo9WYS/view?usp=drive_link">news</a>.
+									</p>
+									<p>
+										We have deliberate discussions on
+										breaches of the code by trainee
+										accountants and I share with students
+										the <a
+											href="https://drive.google.com/file/d/1N39M1LHUkwaI5sXUS6Z-IlyWtC3hwwE7/view?usp=drive_link">
+											SAICA Social Media Guidelines
+										</a>.
+									</p>
+									<p>
+										I aim specifically to instil ethical
+										values in students from a young age to
+										display to them that, even when they are
+										still in training, what they do and how
+										they conduct themselves in person and on
+										social media matters. “Do the right
+										thing” has become somewhat of a chant in
+										my classes.
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<strong>
+										The Auditor’s responsibility towards the
+										detection of fraud
+									</strong>
+									<div class="text-sm">
+										(Face to Face traditional lectures)
+									</div>
+								</td>
+								<td>
+									<p>
+										In this unit, we explore the role of
+										auditors in detecting fraud. This is one
+										of the big contributors to the audit
+										expectation gap (Quick, 2020), and I
+										believe that proper education on the
+										matter can really narrow the gap to some
+										extent. The auditor’s responsibility to
+										detect fraud is addressed in auditing
+										standards, but for students to truly
+										understand an auditor’s role, they must
+										first understand fraud itself.
+									</p>
+								</td>
+								<td>
+									<p>
+										In addition to the Steinheist assignment
+										(addressed above) that also increases
+										students’ understanding and awareness of
+										fraud, I make use of material published
+										by the Association of Certified Fraud
+										Examiners, which they make available
+										annually as part of their <a
+											href="https://www.fraudweek.com/resources">Annual
+											International Fraud Awareness
+											Week</a>.
+									</p>
+									<p>
+										I also make use of Case Studies that are
+										made available by EY (a Big-4 Audit
+										Firm) through their EY Foundation
+										Academic Resources. Students watch
+										enacted videos simulating a real-life
+										company under audit and need to identify
+										fraud indicators in these scenarios. One
+										of these videos can be viewed <a
+											href="https://drive.google.com/file/d/1MUvu01pGu5iOq39RcLUPfeDNdL7tJFSa/view?usp=drive_link">here</a>.
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<strong>
+										The Auditing Profession Act (APA)
+									</strong>
+									<div class="text-sm">
+										(Blended approach with videos and
+										face-to-face contact)
+									</div>
+								</td>
+								<td>
+									<p>
+										This is a short but important unit
+										whereby students need to understand
+										relevant sections of the APA. A blended
+										approach is followed, whereby a brief
+										theory introduction is done in class,
+										and various <a
+											href="https://drive.google.com/file/d/14_tlckj4xUs2rkfrri3eQtFu4CPz6FgN/view?usp=drive_link">videos
+										</a> are done on
+										questions.
+									</p>
+								</td>
+								<td>
+									<p>
+										The lecture is supplemented by a guest
+										lecture by Prof Bernard Agulhas. I
+										deliberately invite Prof Agulhas to
+										present this lecture as he was the CEO
+										of the Independent Regulatory Board of
+										Auditors (IRBA), custodian of the APA,
+										for an extensive period. During his
+										tenure, the APA was drafted and
+										implemented, and he wrote and/or had
+										input in most of the sections of the
+										APA. He then also dealt extensively with
+										breaches of the APA by registered
+										auditors. In his <a
+											href="https://drive.google.com/file/d/1W1JlXT13Mt_t7QHvgn2P1NdljqCy8qB1/view?usp=drive_link">presentation</a>,
+										he
+										addresses the reasons for certain
+										sections, such as common breaches,
+										sanctions, etc.
+									</p>
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<strong>
+										Client Acceptance and Continuance
+									</strong>
+									<div class="text-sm">
+										(Blended approach with videos and
+										face-to-face contact)
+									</div>
+								</td>
+								<td>
+									<p>
+										Determining whether to accept (or
+										continue with) an audit client is the
+										first step in the audit process. It is
+										necessary to give a holistic view of the
+										audit process (birds-eye-view) before
+										the details are dealt with to enable
+										students to easily follow the rest of
+										the process. This is with a video to
+										enable students to refer back to the big
+										picture as this unit is taught. Jana
+										Lamprecht and I compiled the video.
+									</p>
+									<p class="text-sm">
+										I then address this first step of the
+										process in detail by working through the
+										standard and guiding students through
+										questions.
+									</p>
+								</td>
+								<td>
+									<p>
+										In the same way that I guide students
+										through questions in this unit, students
+										have the opportunity to guide others
+										through a Collaborative Online
+										International Learning (COIL) project
+										with Coventry University in the United
+										Kingdom. Both student groups, UFS (SA)
+										and Coventry (UK) are given the same
+										real-life scenario and engage online in
+										role play. The SA students play the role
+										of Audit Partners, while the UK students
+										(being at a lower academic level) play
+										the role of Audit Trainees
+									</p>
+									<p>
+										The partners then guide the trainees
+										through the considerations to accept or
+										decline the new client. This
+										intervention gives students a taste of
+										the real world through role-play. It
+										also enhances their leadership,
+										communication, teamwork, and digital
+										skills, as well as develops their
+										intercultural competence. This project
+										has produced wonderful <a
+											href="https://drive.google.com/file/d/1kBLxzFHMCZb_70lLSpBAcc7IWe36QBtf/view?usp=drive_link">results</a>.
+										While
+										this has only been done on a voluntary
+										basis, efforts are made to make this a
+										mandatory project for all students. A
+										potential research project between
+										myself and the UK colleagues on this
+										assignment is currently being explored.
+									</p>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<p>
+						In addition to the above, I implemented the following interventions to
+						further enhance students’ understanding of the real world and skills
+						development which is not limited to a specific module.
+					</p>
+					<h3>
+						Industry Visits
+					</h3>
+					<img class="mt-2 rounded" src="assets/industry-visits.png" alt="">
+					<p>
+						I have utilised strong connections with industry to enable students to
+						make on-site visits to big organisations in Bloemfontein. I have secured
+						a sponsorship from Interstate Buslines to transport our students between
+						campus and these companies, which is central to the success of this
+						initiative, given the large student group (approximately 300 students).
+						Students then have the choice of which company they would like to visit,
+						as all companies are in different industries. These include Windmill
+						Casino (Entertainment), SA Truck Bodies (Manufacturing), Interstate
+						Buslines (Transportation) and the Raubex Group (Construction).
+					</p>
+					<p>
+						When students visit these companies, they are taken on a tour through
+						the operations site and listen to presentations from the finance teams.
+						They have the opportunity to ask questions and engage with professionals
+						who are doing the work that they are aiming towards. This really does
+						wonders for students’ motivation and inspires them to work hard to reach
+						these goals. These visits develop students’ business acumen, break down
+						silos between modules (as they see how modules integrate) and enhance
+						students’ view of the relevance of their course/studies. Students are
+						also required to write a <a
+							href="https://drive.google.com/file/d/1q5oJzqpMGdKgvbBKJu6LjKulSiqChudl/view?usp=drive_link">reflective
+							essay</a> on these visits, which
+						addresses writing skills. More information on these visits is in an
+						article published on the UFS website, which is available <a
+							href="https://www.ufs.ac.za/templates/news-archive-item/campus-news/2023/july/ufs-promotes-student-development-through-industry-visits">here</a>.
+					</p>
+					<h3>
+						Business Acumen Day
+					</h3>
+					<div class="flex justify-between mt-2">
+						<img class="w-sm rounded" src="assets/bad-1.jpg" alt="">
+						<img class="w-sm rounded" src="assets/bad-2.jpg" alt="">
+					</div>
+					<p>
+						In 2023, I started the initiative to host an annual Business Acumen Day,
+						each year with a different focus. In 2023, the Business Acumen Day had
+						an Auditing focus, while in 2024, the focus was on Governance and
+						Sustainability.
+					</p>
+					<p>
+						On this day, I invite high-profile speakers to address our students on
+						relevant topics. The effect that these speakers have on students is
+						truly inspiring. They relate to these speakers as role models and
+						actively engage with them through questions and answer sessions after
+						the presentations.
+					</p>
+					<p>
+						In 2023, I secured Standards Bank as a sponsor for the event, and the
+						speakers included:
+					</p>
+					<ul>
+						<li>
+							Rob Rose (editor of the Financial Mail and author of
+							Steinheist,
+							which is the book that the docuseries Steinheist is
+							based on;
+							refer to the Unit on the King IV Report on Corporate
+							Governance
+							above);
+						</li>
+						<li>
+							Patricia Stock CA(SA) (at the time, an inspiring Audit
+							Partner
+							and subsequently appointed as the CEO of SAICA);
+						</li>
+						<li>
+							Conrad de Wee (SAICA National Council member); and
+						</li>
+						<li>
+							Prof Bernard Agulhas (former Audit Regulator/CEO of IRBA
+							and
+							adjunct professor at the SoA).
+						</li>
+					</ul>
+					<p>
+						In 2024, we partnered with the Institute of Directors (IoDSA) to host
+						this event and the speakers were:
+					</p>
+					<ul>
+						<li>
+							Ansie Ramalho (Chair of the King Committee responsible
+							for
+							drafting the King IV Report);
+						</li>
+						<li>
+							Prof Parmi Natesan (CEO of the IoD and adjunct professor
+							at the
+							SoA);
+						</li>
+						<li>
+							Felicia Msiza (CEO of the Raubex Group, the largest road
+							construction company in Africa); and
+						</li>
+						<li>
+							Rob Rose (as a repeat from last year, given his
+							insightful
+							presentations and deep knowledge in the financial world
+							as a
+							renowned, award-winning financial journalist).
+						</li>
+					</ul>
+					<p>
+						This event is hosted in the Callie Human as we invite not only my
+						students but also all students in the SoA (second year up to
+						post-graduate). The invitation sent to students can be viewed here: <a
+							href="https://drive.google.com/file/d/1cVRjeZ-FJCiOp1-DuPl3RqJZXHQW64W6/view?usp=drive_link">2023</a>
+						and <a
+							href="https://drive.google.com/file/d/1ZCFHQwuTFYcCbPHYstDSzeKWQ1skHmlV/view?usp=drive_link">2024</a>.
+						In addition to the student event, we also host a panel
+						discussion with the same speakers, to which SoA stakeholders are
+						invited. This strengthens the School’s relationship with various
+						stakeholders, such as those hosting our students at Industry Visits.
+					</p>
+					<div class="flex">
+						<img class="m-2 h-32 inline rounded" src="assets/zondo.jpg" alt="">
+						<p>
+							In 2025, the Business Acumen Day will be held in August with the
+							theme
+							of Ethical Leadership. With assistance from one of the faculty’s
+							adjunct
+							professors, I was able to secure Former Chief Justice of South
+							Africa,
+							<strong>Judge Raymond Zondo</strong> as the keynote speaker to
+							address
+							not only the
+							students within the School of Accountancy, but also the wider
+							faculty.
+						</p>
+					</div>
+					<h3 class="mb-2">
+						International Audit Week
+					</h3>
+					<img class="inline rounded h-96" src="assets/students-london-bridge.jpg" alt="">
+					<img class="inline rounded h-96" src="assets/students-staff-sponsors.jpg"
+						alt="">
+					<p class="inline-block">
+						Through the strong connection built with Coventry University,
+						England
+						(refer to the COIL Project addressed in the table above), I was
+						<a
+							href="https://drive.google.com/file/d/1gx8JBHdihtZRRbQqI6Kg53n1yawZVhLA/view?usp=drive_link">invited</a>
+						by Coventry University to bring students to their International
+						Audit
+						Week, hosted annually in October. I solely raised R250 000 from
+						external
+						funders, which enabled me and Prof Frans Prinsloo to take five
+						of the
+						School of Accountancy’s top-performing students to England at
+						the end of
+						last year.
+					</p>
+					<p>
+						The 2025 International Audit Week is scheduled to either take place in
+						the Netherlands or in Switzerland and I have already raised R100 000 for
+						this purpose, while awaiting feedback from other funders.
+					</p>
+					<p>
+						We often focus so much on students who struggle, and rightfully so, but
+						we tend to forget to reward our top-performing students. This initiative
+						serves just that purpose and, through proper exposure, should motivate
+						top scholars in the Free State to study with the UFS SoA. This
+						initiative also addresses the UFS Vision 130 focus on
+						Internationalisation.
+					</p>
+				</div>
+				<div class="tab-content" id="engaged">
+					<h2>
+						Promotion of Student Learning
+					</h2>
+					<h3 class="mt-2">
+						Student Body
+					</h3>
+					<p>
+						For the EACG3708/EAUD5808/EAUD6808: Auditing and Corporate Governance
+						modules that I teach, my students are rather diverse. This group
+						includes students who are either enrolled in their final year of B.
+						Accounting or the post-graduate programmes after completing their B.Com
+						(Accounting) degree. In 2024, the student body in these modules included
+						250 students, comprising 106 B.Acc third year, 95 B.Com Hons., and 49
+						PGDipGA students. The gender distribution is 143 females to 107 males,
+						with a racial composition of 211 African, 11 Coloured, 26 White and 2
+						Indian students. Among these, 180 are first-time attendees, while 70 are
+						repeating the course, including 12 students repeating to improve their
+						marks for B.Acc Honors admission. The numbers for 2025 are still a work
+						in progress and should be confirmed after the first semester tests’ data
+						is available. I am privileged to have had Jana Lamprecht as a colleague
+						in this module until 2024, who utilised advanced Excel and Power BI
+						tools to analyse statistics and track student success. These statistics
+						enable us to address student-specific needs and track student success
+						and challenges.
+					</p>
+					<h3>
+						Challenges faced by students that hinder their success
+					</h3>
+					<p>
+						I have identified three key issues that students struggle with in these
+						programmes, which include:
+					</p>
+					<ul>
+						<li>
+							Time management when writing assessments
+						</li>
+						<li>
+							A focussing too much on theory and neglecting
+							application
+						</li>
+						<li>
+							Not learning from mistakes by doing proper post-mortems
+							on their
+							assessments.
+						</li>
+					</ul>
+					<p>
+						I, therefore, make deliberate time to address these issues in class by
+						demonstrating techniques to address these challenges. For example, I use
+						the analogy of sport (I let students pick a sport and adapt to that).
+						The discussion on Theory vs Application includes the following:
+					</p>
+					<p>
+						“Do you think Christiano Ronaldo (world-renowned football player) spends
+						time in the gym as well as practising skills on the football field?
+						[Students agree.] What do you think will happen if he only goes to the
+						gym and never sets foot on the field? He will surely be very fit, but he
+						would lack the skills needed to win the match. What would happen if he
+						only spent time on the field and never set foot in the gym? He will have
+						great skills and football abilities, and while he might not be as fit as
+						one would hope, he will also gain some fitness on the field by running
+						around and being active. He might still have a chance to win the match.
+						It works the same with studies.
+					</p>
+					<img class="rounded" src="assets/gym.png" alt="">
+					<p>
+						If you want to be the best, you need to make time for both Gym/Theory
+						and Field practice/Questions. But if time is limited and you need to
+						compromise on one, it can never be the practical part. Through
+						practising questions (field practice), you get the skills needed for the
+						examination, but naturally, you also learn at least some of the theory
+						(fitness) through this process. This way, you still have a chance to do
+						well in the test/exam (match).”
+					</p>
+					<p>
+						Students naturally start with studying theory but often spend so much
+						time on the theory that they neglect the practical application. I have
+						received very positive feedback from students on the difference it made
+						when they changed their approach to a more practical one.
+					</p>
+					<p>
+						My previous colleague in this module, Jana, and I also designed a
+						post-mortem form that students need to complete after their assessments.
+						This serves as a reflection on their learning, successes and mistakes
+						and guides them through the process. So many students have told us that,
+						when faced with poor test results, they cannot face it and just ignore
+						it. We, however, believe that tests are a learning opportunity, and if
+						students do not use them to learn from their mistakes, they tend to
+						repeat the same/similar mistakes in future assessments. The post-mortem
+						form is adapted with each assessment, but an example can be viewed <a
+							href="https://drive.google.com/file/d/1X9eB4WSxEgDTUr9ZRKOnpJovcqgk-5lS/view?usp=drive_link">here</a>.
+					</p>
+					<h3>
+						Learning and Teaching Strategies and Promoting Students’ Understanding
+						of the Module
+					</h3>
+					<p>
+						Strategies employed in this module to promote student learning and their
+						understanding of the module include a blended learning approach with
+						deliberate integration of the real world. This is discussed fully under
+						the Teaching Approach, Practice and Effectiveness above.
+					</p>
+					<p>
+						In addition, content materials are made available to students in a
+						carefully structured manner. Given that students’ time is so limited in
+						the Accountancy programmes, I do not want students to waste unnecessary
+						time wondering what they need to do and where they can find the
+						information. Each unit in the module has a detailed <a
+							href="https://drive.google.com/file/d/1OQUe8S9o2Evu_jThcQgHnISerRd5wXIG/view?usp=drive_link">unit
+							guide</a> (per unit
+						within the module), while I also provide a <a
+							href="https://drive.google.com/file/d/13OM6B5XaQX08jmUdxKzRWV7_4dGGSw-k/view?usp=drive_link">roadmap</a>
+						to each unit as a
+						quick reference guide to what students should prepare for class, what
+						will be done in class and what should be done afterwards.
+					</p>
+					<h3>
+						Insights into student learning
+					</h3>
+					<p>
+						In addition to the insights mentioned above, I am very deliberate in
+						obtaining feedback from our students, not only on our personal lecturing
+						styles but also on the way that students experience different
+						interventions, material, etc. Through this, we also obtain information
+						on the challenges that they experience and the changes that they would
+						like to see in the module. We do this with formal evaluations (in
+						addition to those done by the EMS Teaching and Learning Office), as we
+						value module-specific feedback, enabling us to reflect deeply on the
+						feedback and respond appropriately. An example of this feedback form can
+						be viewed <a
+							href="https://drive.google.com/file/d/1u2HRKWg4poIoNF79QozkrTiXVJmuklzw/view?usp=drive_link">here</a>.
+						In response to the feedback received from students, we
+						have, for example, changed the order in which topics are presented to
+						enable more learning opportunities on certain topics before the
+						examination.
+					</p>
+				</div>
+				<div class="tab-content" id="leadership">
+					<h2>
+						Student development and support (including student discipline)
+					</h2>
+					<p>
+						Various initiatives are described in the previous sections, addressing
+						the
+						development of graduate attributes, such as business acumen, digital
+						skills, writing skills and communication skills. Students are also
+						actively and continuously encouraged to consult with lecturers and
+						academic trainees. My WhatsApp number is available to students to enable
+						them to ask a quick question when they get stuck. I welcome voice notes
+						(and send many of them!) to help students progress when studying. I do
+						not want students to take an hour out of their day to walk to campus and
+						back when they can just ask quickly on WhatsApp. Oftentimes, the problem
+						is bigger than a WhatsApp response, and then I spent time with in-person
+						consultations.
+					</p>
+					<p>
+						My students generally do not misuse my personal number. We have a good
+						relationship and mutual respect. I do my best to help them as quickly as
+						possible, and they understand that I have other responsibilities and
+						personal commitments. I genuinely care for my students and believe that
+						this makes me approachable when students are in need of support. Refer
+						to the Reflection and Feedback section below for more details.
+					</p>
+					<p>
+						I have also dealt with difficult student disciplinary cases, as
+						evidenced by the <a
+							href="https://drive.google.com/file/d/1vg4spvcbnWMEKGxMLnKcI7NbnW7i7uxC/view?usp=drive_link">linked
+							documentation</a>. I take the academic misconduct of
+						students very seriously, as this directly filters into the professionals
+						that we are sending into the workplace. Nonetheless, with the specific
+						student referred to in the linked communication, I spent more than an
+						hour consulting with him in my office after his sanction, unpacking the
+						situation and supporting the student in his decisions further. Everyone
+						makes mistakes, and we can all do with some support and kindness when
+						this happens.
+					</p>
+				</div>
+				<div class="tab-content" id="conclusion">Curriculum & Course Development
+					<p>
+						In addition to ensuring that the EACG3708/EAUD5808/EAUD6808 modules
+						align with the SAICA Competency Framework, I also played a pivotal role
+						in designing and developing the EOEC2614 (Organisational Ethics and
+						Citizenship) module, which was presented for the first time in 2024 to
+						Accounting, Public Administration and Finance students in the EMS
+						faculty.
+					</p>
+					<p>
+						The module is designed to be fully blended, with two hours of online
+						(mostly pre-recorded) lectures and a two-hour practical session, which
+						takes place face-to-face. Various lecturers assist in recording lectures
+						and presenting practical classes on both the Bloemfontein and Qwaqwa
+						campuses. I facilitate and coordinate the collaboration on this module.
+					</p>
+					<p>
+						In addition to the online lectures and in-person practical classes,
+						students need to address and submit various case studies in different
+						settings to practice and display their ethical reasoning in common
+						business ethics dilemmas. Students double peer-review each other’s case
+						study submissions as this facilitates reflection. When students review
+						their peers’ work, it also gives them different perspectives and
+						broadens their ethical reasoning and critical thinking.
+					</p>
+					<p>
+						An ethics project is also done in this module, whereby students need to
+						do a presentation on an ethical dilemma in business. Student work in
+						teams and submit a video of their presentation. This develops teamwork,
+						digital skills and, most importantly, communication and presentation
+						skills. An example of such a submission is included <a
+							href="https://drive.google.com/file/d/1NbYv-VMz65G6bgQclvQCmLcgbaYiAAD_/view?usp=drive_link">here</a>.
+					</p>
+					<p>
+						New technologies are embraced in this module, with the use of Feedback
+						Fruits in recorded lectures. This enables video recordings to stop at
+						certain times, requiring students to answer content-specific questions
+						before they can continue. This ensures that students truly engage with
+						the content and not only play videos without watching them. In addition,
+						live quizzes are used in class through the platform <a
+							href="https://quizizz.com">quizizz.com</a>
+						to encourage engagement and facilitated discussions in face-to-face
+						classes, especially given the large size of the class (800+ students).
+					</p>
+					<p>
+						To facilitate quality and consistency in this module, a standard
+						approach to content development was followed, which included the
+						preparation/presentation of the following per unit (links to examples
+						included):
+					</p>
+					<ul>
+						<li>
+							Content <a
+								href="https://drive.google.com/file/d/18o6_U-P1RpNMSkHOE0XPUBFHvF-7Krbr/view?usp=drive_link">slides</a>
+							and <a
+								href="https://drive.google.com/file/d/185gTYY2ziNvEXUQQC2MKgZwr679soYTG/view?usp=drive_link">videos
+							</a>
+						</li>
+						<li>
+							<a
+								href="https://docs.google.com/document/d/1F-Ap5aZGqs-q1256YXX0RbZFghHkgr0R/edit?usp=drive_link&ouid=115376875009091733263&rtpof=true&sd=true">Guidance
+								to the lecturer</a> (to ensure consistency between BFN
+							and
+							QQ)
+						</li>
+						<li>
+							<a
+								href="https://docs.google.com/document/d/1F-Ap5aZGqs-q1256YXX0RbZFghHkgr0R/edit?usp=drive_link&ouid=115376875009091733263&rtpof=true&sd=true">Guidance
+							</a> for the setup of recorded lectures to incorporate
+							questions on Feedback Fruits
+						</li>
+						<li>
+							<a
+								href="https://drive.google.com/file/d/1aZ4IyddrOQ205M5WQ-niwmG87cY3uWHt/view?usp=drive_link">Case
+								studies</a> to be completed.
+						</li>
+					</ul>
+				</div>
 				<div class="tab-content" id="assessment">Assessment Practices</div>
 				<div class="tab-content" id="mentoring">Mentoring & Coaching</div>
 				<div class="tab-content" id="reflection">
 					<h2>Reflection & Feedback</h2>
-					<img src="assets/student-1.png" alt="">
+					<img class="rounded" src="assets/student-1.png" alt="">
 				</div>
 				<div class="tab-content" id="development">Development & Recognition</div>
 				<div class="tab-content" id="research">Research & Scholorship</div>
